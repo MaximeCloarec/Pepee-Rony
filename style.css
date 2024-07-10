@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Playwrite%20HU:700|Rale:400");
+
+:root {
+    --main-bg-color: #303030;
+    --main-text-color: #ffffff;
+}
+
+body,
+a {
+    font-family: "Rale";
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Playwrite HU";
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+} /* 16px */
+
+h1 {
+    font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+    font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+    font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+    font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+    font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+    font-size: 0.75rem; /* 12px */
+}
+
+/* HEADER */
+
+.headerBlurImage {
+    display: flex;
+    background-image: url(/img/ivan-torres-MQUqbmszGGM-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    width: 100dvw;
+    height: 35dvh;
+}
+
+.logo {
+    backdrop-filter: blur(5px);
+    filter: blur(0);
+    border-radius: 100%;
+    padding: 20px;
+}
+
+nav {
+    background-color: #ffffff;
+}
+
+.navbar {
+    box-shadow: 1px 4px 10px black;
+}
+
+.nav-link {
+    width: 100%;
+}
+
+.nav-item {
+    width: 200px;
+    font-size: larger;
+    color: #303030;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    background-color: #6d071a;
+    transition: 1s ease-in-out;
+    border-radius: 10px;
+}
+.nav-item:hover a {
+    color: #ffffff;
+}
+
+.d-flex {
+    height: fit-content;
+}
+
+.basketSvg {
+    display: inline-block;
+    width: 40px;
+}
+
+/* Leaflet */
+#map {
+    height: 200px;
+    width: 200px;
+}
+
+/* FOOTER */
+
+body {
+    font-family: 'Signika', sans-serif;
+}
+
+footer {
+    margin: 10px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.bg-grey {
+    background: #fff;
+}
+
+.logo-part {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    color: #303030;
+}
+
+footer p,
+a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer_contact {
+    margin-top: 3%;
+}
+
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: #900A17;
+    width: 15%;
+    height: 1px;
+    left: 0;
+    bottom: -10px;
+}
+
+.btn-footer {
+    color: #303030;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 50px;
+    font-size: 13px;
+    padding: 7px 20px;
+    margin: 3%;
+}
+
+.btn-footer:hover {
+    color: #fff;
+    background-color: #900A17;
+}
+
+.form-footer input[type="text"] {
+    border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    border: #900A17 1px solid;
+    width: 50%;
+}
+
+::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.form-footer input[type="button"] {
+    border: none;
+    background: #900A17;
+    margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+
+.social .bi {
+    color: #900A17;
+    font-size: 22px;
+    padding: 0px 10px;
+    ;
+}
+
+footer ul li {
+    list-style: none;
+    display: block;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: grey;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #900A17 !important;
+
+}
+
+.logo-part {
+    border-right: 1px solid #900A17;
+    height: 100%;
+}
+
+.second_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_liens {
+    display: flex;
+}
+
+.contact_texte {
+    align-self: center;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
