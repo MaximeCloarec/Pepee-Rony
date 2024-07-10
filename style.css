@@ -6,7 +6,8 @@
 }
 
 body,
-a {
+a,
+p {
     font-family: "Rale";
     font-weight: 400;
 }
@@ -58,7 +59,7 @@ small {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    width: 100dvw;
+    width: 100dw;
     height: 35dvh;
 }
 
@@ -115,7 +116,7 @@ nav {
 /* FOOTER */
 
 body {
-    font-family: 'Signika', sans-serif;
+    font-family: "Signika", sans-serif;
 }
 
 footer {
@@ -144,11 +145,11 @@ footer {
 footer p,
 a {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 footer h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     margin-bottom: 20px;
     position: relative;
 }
@@ -160,7 +161,7 @@ footer h6 {
 footer h6:after {
     position: absolute;
     content: "";
-    background: #900A17;
+    background: #900a17;
     width: 15%;
     height: 1px;
     left: 0;
@@ -168,18 +169,22 @@ footer h6:after {
 }
 
 .btn-footer {
+    display: flex;
     color: #303030;
     text-decoration: none;
     border: 1px solid;
     border-radius: 50px;
     font-size: 13px;
     padding: 7px 20px;
-    margin: 3%;
+    margin-right: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
 }
 
 .btn-footer:hover {
     color: #fff;
-    background-color: #900A17;
+    background-color: #900a17;
 }
 
 .form-footer input[type="text"] {
@@ -187,7 +192,7 @@ footer h6:after {
     border-radius: 16px 0 0 16px;
     outline: none;
     padding-left: 10px;
-    border: #900A17 1px solid;
+    border: #900a17 1px solid;
     width: 50%;
 }
 
@@ -199,7 +204,7 @@ footer h6:after {
 
 .form-footer input[type="button"] {
     border: none;
-    background: #900A17;
+    background: #900a17;
     margin-left: -5px;
     color: #fff;
     outline: none;
@@ -208,10 +213,9 @@ footer h6:after {
 }
 
 .social .bi {
-    color: #900A17;
+    color: #900a17;
     font-size: 22px;
     padding: 0px 10px;
-    ;
 }
 
 footer ul li {
@@ -231,12 +235,11 @@ footer ul li a {
 
 li a:hover {
     text-decoration: none;
-    color: #900A17 !important;
-
+    color: #900a17;
 }
 
 .logo-part {
-    border-right: 1px solid #900A17;
+    border-right: 1px solid #900a17;
     height: 100%;
 }
 
@@ -264,3 +267,124 @@ li a:hover {
     display: flex;
     justify-content: center;
 }
+
+/* MENUS */
+
+/* The sidebar menu */
+.sideNavMenu {
+    width: 15%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #6d071a;
+}
+
+.casseCouille {
+    height: 50px;
+}
+
+.sideNavOnglet {
+    margin-top: 20px;
+    position: sticky; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0;
+}
+
+/* The navigation menu links */
+.sideNavMenu a {
+    padding: 0 0 10px 10px;
+    margin: 0 10px 20px 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideNavMenu a:hover {
+    background-color: #aa071a;
+    box-shadow: 0px 5px 10px black;
+}
+
+.pizzaMainContainer {
+    display: flex;
+}
+
+.menuPizzaMain {
+    width: 85%;
+    padding: 0px 10px;
+    background-color: #303030;
+    color: white;
+}
+
+.carousel-img {
+    width: 25%;
+}
+
+.menuPizzaCustomTitre {
+    padding: 20px 0 0 20px;
+}
+
+.menuPizzaCustomImage {
+    padding: 60px;
+    margin-left: 160px;
+    width: 50%;
+}
+
+.menuPizzaCustomContainer {
+    display: flex;
+    align-items: center;
+}
+
+.menuPizzaCustomText {
+    position: relative;
+    left: -120px;
+    background-color: #6d071a;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    align-items: center;
+}
+
+.menuContainer {
+    padding: 10px;
+    background-color: #404040;
+    text-align: center;
+    align-items: center;
+}
+
+.pizza h2 {
+    margin: 50px 0 50px 30px;
+}
+
+.foodColumn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foodImage {
+    margin-bottom: 20px;
+    width: 25vw;
+}
+
+.foodText {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+/* MOBILE HEADER */
+
+@media (max-width: 992px){
+.logo-part{
+    border-right: none;
+    width: 50vw;
+    height: auto;
+}
+}
+
+/*  */
