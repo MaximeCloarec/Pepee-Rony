@@ -638,3 +638,171 @@ h1 {
 }
 
 /* Accueil */
+
+/* Carousel*/
+
+.carousel-item img {
+    width: 100px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*Yann*/
+
+.main{
+    background-color: #303030;
+    color: white;
+}
+
+.Yann {
+    background-color: #0f0505f8;
+    color: floralwhite;
+    padding: 70px;
+}
+
+.Yann img {
+    width: 250px;
+    max-width: 400px;
+}
+
+.Yann h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.Yann p {
+    margin: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Section gallerie*/
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.5em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-thumbnail {
+    max-width: 300px;
+    border: none;
+}
+.etoile {
+    color: yellow;
+}
+.parler {
+    margin-left: 600px;
+    margin-top: 150px;
+}
+/* section contact*/
+
+.contact-section {
+    background-color: #333;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.contact-section h2,
+.contact-section p,
+.contact-section a {
+    margin-bottom: 15px;
+    color: floralwhite;
+}
+
+.contact-section {
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+/* section map */
+
+.map-container {
+    background-color: #000; /* Cadre noir */
+    padding: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.adresse {
+    margin: 20px 0;
+}
+
+/*bouton c'est par içi */
+
+.btn-danger {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #d9534f;
+    border-color: #6d071a;
+}
+
+.btn-danger:hover {
+    background-color: #c40000;
+}
+.adresse {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.adresse p {
+    text-align: right;
+    text-wrap: wrap;
+}
+
+.text-white a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.text-white a:hover {
+    color: #d9534f;
+}
+
+/* réseaux sociaux */
+
+.social-section {
+    max-width: 600px;
+    text-align: center;
+}
+
+.social-title {
+    margin-bottom: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    color: #a10000;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #c40000;
+}
+
+.social-icon {
+    width: 100%;
+    background-color: #0f0505f8;
+    padding: 70px;
+}
