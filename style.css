@@ -5,6 +5,13 @@
     --main-text-color: #ffffff;
 }
 
+body {
+    height: 100%;
+    /*background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) center center fixed;
+    background-size: cover; */
+    background-color: #333;
+}
+
 body,
 a,
 p {
@@ -53,7 +60,7 @@ small {
 
 .headerBlurImage {
     display: flex;
-    background-image: url(/img/ivan-torres-MQUqbmszGGM-unsplash.jpg);
+    background-image: url(img/ivan-torres-MQUqbmszGGM-unsplash.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -379,12 +386,255 @@ li a:hover {
 
 /* MOBILE HEADER */
 
-@media (max-width: 992px){
-.logo-part{
-    border-right: none;
-    width: 50vw;
-    height: auto;
-}
+@media (max-width: 992px) {
+    .logo-part {
+        border-right: none;
+        width: 50vw;
+        height: auto;
+    }
 }
 
-/*  */
+/* Pizza custom */
+.shade {
+    overflow: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.blackboard {
+    position: relative;
+    width: 640px;
+    margin: 7% auto;
+    border: tan solid 12px;
+    border-top: #bda27e solid 12px;
+    border-left: #b19876 solid 12px;
+    border-bottom: #c9ad86 solid 12px;
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0), 0px 0px 0px 2px #c2a782,
+        0px 0px 0px 4px #a58e6f, 3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    /*background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1)); */
+    background-color: #333;
+}
+
+.blackboard:before {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border: #2c2c2c solid 2px;
+    content: "Customisez votre pizza :";
+    font-family: "Playwrite HU", cursive;
+    font-size: 2.2em;
+    color: rgba(238, 238, 238, 0.7);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form {
+    padding: 70px 20px 20px;
+}
+
+p {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+label {
+    vertical-align: middle;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.7);
+}
+
+p:nth-of-type(5) > label {
+    vertical-align: top;
+}
+
+input,
+textarea {
+    vertical-align: middle;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    font-family: "Playwrite HU", cursive;
+    font-size: 1.6em;
+    color: rgba(238, 238, 238, 0.8);
+    line-height: 0.6em;
+    outline: none;
+}
+
+textarea {
+    position: relative;
+    left: 20px;
+    font-size: 0.8em;
+    line-height: 1em;
+    resize: none;
+    margin: 20px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    color: rgba(238, 238, 238, 0.7);
+    line-height: 1em;
+    padding: 0;
+}
+
+input[type="submit"]:focus {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+}
+
+::-moz-selection {
+    background: rgba(238, 238, 238, 0.2);
+    color: rgba(238, 238, 238, 0.2);
+    text-shadow: none;
+}
+
+::selection {
+    background: rgba(238, 238, 238, 0.4);
+    color: rgba(238, 238, 238, 0.3);
+    text-shadow: none;
+}
+
+select {
+    appearance: none;
+    background-color: #333;
+    border: none;
+    color: #e5e7eb;
+    vertical-align: sub;
+    position: relative;
+    left: 20px;
+    font-family: "Playwrite HU", cursive;
+}
+option {
+    font-size: smaller;
+}
+.p_form {
+    margin: 25px 0;
+}
+
+article {
+    font-family: "Playwrite HU", cursive;
+    margin: 100px;
+}
+article p {
+    margin: 50px;
+    font-size: 1.2em;
+    color: rgba(238, 238, 238);
+}
+.produits_similaires {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pizza_card {
+    display: flex;
+    flex-direction: column;
+}
+.pizza_card img {
+    height: 260px;
+    width: 260px;
+    box-shadow: 1px 4px 10px black;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.pizza_card:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.produits_similaires p {
+    align-self: center;
+    margin: 15px;
+    font-family: "Playwrite HU", cursive;
+    color: rgba(238, 238, 238);
+}
+.produits_h3 {
+    margin: 50px 25px;
+    color: rgba(238, 238, 238);
+}
+h1 {
+    color: rgba(238, 238, 238);
+}
+/* BUTTON */
+/* CSS */
+.button-53 {
+    background-color: #b19876;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    font-family: "Playwrite HU", cursive;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: 0.75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-53:focus {
+    outline: 0;
+}
+
+.button-53:after {
+    content: "";
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+@media (max-width: 1400px) {
+    .pizza_card img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin: 25px 0;
+    }
+}
+
+@media (max-width: 1250px) {
+    .button-53 {
+        padding: 0.75rem 3rem;
+        font-size: 1.25rem;
+    }
+    .produits_similaires {
+        flex-direction: column;
+        align-items: center;
+    }
+    .produits_h3 {
+        text-align: center;
+    }
+    .blackboard {
+        max-width: 100%;
+    }
+    article h1 {
+        font-size: 1.75em;
+        text-align: center;
+    }
+}
+
+/* Accueil */
